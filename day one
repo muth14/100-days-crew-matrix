@@ -1,1 +1,21 @@
-day one crew matrix
+import java.util.*;
+public class pn{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int a;
+        System.out.println("Enter any number:");
+        a=sc.nextInt();
+        if(a>=0){
+            System.out.println("Number is positive");
+        }
+        else{
+            System.out.println("Number is negative");
+        }
+        
+    }
+}
+
+output:
+Enter any number:
+-6
+Number is negative
