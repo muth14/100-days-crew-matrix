@@ -1,0 +1,23 @@
+import java.util.*;
+public class pattern{
+    public static void main(String args[]){
+        for(int a=0;a<=5;a++){
+            for(int b=0;b<a;b++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+       
+
+    }
+}
+
+
+OUTPUT
+   & 'C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\Muthu visalakshi\AppData\Roaming\Code\User\workspaceStorage\6026a4eea8e1589e9cfaad724dfde2ff\redhat.java\jdt_ws\krishna_7dd1b7f2\bin' 'pattern' 
+eea8e1589e9cfaad724dfde2ff\redhat.java\jdt_ws\krishna_7dd1b7f2\bin' 'pattern'                             
+ * 
+ *  * 
+ *  *  * 
+ *  *  *  * 
+ *  *  *  *  * 
