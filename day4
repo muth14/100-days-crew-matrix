@@ -1,0 +1,58 @@
+ublic class Rectangle {
+    private double width;
+    private double height;
+
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public double calculateArea() {
+        return width * height;
+    }
+
+    public double calculatePerimeter() {
+        return 2 * (width + height);
+    }
+
+    public boolean isSquare() {
+        return width == height;
+    }
+
+    public void displayDetails() {
+        System.out.println("Width: " + width);
+        System.out.println("Height: " + height);
+        System.out.println("Area: " + calculateArea());
+        System.out.println("Perimeter: " + calculatePerimeter());
+        System.out.println("Is Square: " + isSquare());
+    }
+
+    public static void main(String[] args) {
+        Rectangle rect1 = new Rectangle(5, 10);
+        Rectangle rect2 = new Rectangle(7, 7);
+
+        System.out.println("Rectangle 1 Details:");
+        rect1.displayDetails();
+
+        System.out.println();
+
+        System.out.println("Rectangle 2 Details:");
+        rect2.displayDetails();
+    }
+}
+
+OUTPUT
+   & 'C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\Muthu visalakshi\AppData\Roaming\Code\User\workspaceStorage\6026a4eea8e1589e9cfaad724dfde2ff\redhat.java\jdt_ws\krishna_7dd1b7f2\bin' 'Rectangle' 
+eea8e1589e9cfaad724dfde2ff\redhat.java\jdt_ws\krishna_7dd1b7f2\bin' 'Rectangle'                           Rectangle 1 Details:
+Width: 5.0
+Height: 10.0
+Area: 50.0
+Perimeter: 30.0
+Is Square: false
+
+Rectangle 2 Details:
+Width: 7.0
+Height: 7.0
+Area: 49.0
+Perimeter: 28.0
+Is Square: true
