@@ -1,0 +1,29 @@
+import java.util.*;
+public class greater{
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in) ;
+        int n=sc.nextInt();
+        System.out.println("The number one:" + n);
+        int n1=sc.nextInt();
+        System.out.println("The number two:" + n1);
+        if(n==n1){
+            System.out.println("Equal");
+        }
+        else if(n>n1){
+            System.out.println("Greater");
+        }
+        else {
+
+            System.out.println("Less");
+        }
+
+    }
+}
+
+OUTPUT
+   c:; cd 'c:\krishna'; & 'C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\Muthu visalakshi\AppData\Roaming\Code\User\workspaceStorage\6026a4eea8e1589e9cfaad724dfde2ff\redhat.java\jdt_ws\krishna_7dd1b7f2\bin' 'greater' 
+rkspaceStorage\6026a4eea8e1589e9cfaad724dfde2ff\redhat.java\jdt_ws\krishna_7dd1b7f2\bin' 'greater'        5
+The number one:5
+7
+The number two:7
+Less
