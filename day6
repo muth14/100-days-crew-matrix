@@ -1,0 +1,19 @@
+public class range {
+    public static void main(String args[]){
+        int a=5;
+        int b=10;
+        int sum=0;
+        for(int i=a;i<=b;i++)
+            sum=sum+i;
+            System.out.println("The sum is:"+sum);
+        
+
+    }
+    
+}
+
+Output
+
+   c:; cd 'c:\krishna'; & 'C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\Muthu visalakshi\AppData\Roaming\Code\User\workspaceStorage\6026a4eea8e1589e9cfaad724dfde2ff\redhat.java\jdt_ws\krishna_7dd1b7f2\bin' 'range' 
+rkspaceStorage\6026a4eea8e1589e9cfaad724dfde2ff\redhat.java\jdt_ws\krishna_7dd1b7f2\bin' 'range'        
+     The sum is:45
