@@ -1,0 +1,26 @@
+public class main
+ {
+   public static void main (String[]args)
+   {
+
+     int num = 15;
+     int a = 0, b = 1;
+
+    
+       System.out.print (a + " , " + b + " , ");
+
+     int nextTerm;
+
+      
+     for (int i = 2; i < num; i++)
+       {
+      nextTerm = a + b;
+      a = b;
+          b = nextTerm;
+          System.out.print (nextTerm + " , ");
+       }
+   }      
+  ouput
+     & 'C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\Muthu visalakshi\AppData\Roaming\Code\User\workspaceStorage\26f165c88282b982d0114dadeade7c27\redhat.java\jdt_ws\javapgm_2c983a3c\bin' 'main' 
+ssages' '-cp' 'C:\Users\Muthu visalakshi\AppData\Roaming\Code\User\workspaceStorage\26f165c88282b982d0114dadeade7c27\redhat.java\jdt_ws\javapgm_2c983a3c\bin' 'main'                                                                               
+  0 , 1 , 1 , 2 , 3 , 5 , 8 , 13 , 21 , 34 , 55 , 89 , 144 , 233 , 377 , 
