@@ -1,0 +1,43 @@
+public class main1
+ {
+   public static void main (String[]args)
+   {
+
+     int lower = 1, upper = 20;
+
+
+     for (int i = lower; i <= upper; i++)
+       if (isPrime (i))
+        System.out.println (i);
+   }
+
+   static boolean isPrime (int n)
+   {
+     int count = 0;
+
+     
+     if (n < 2)
+       return false;
+
+     
+     for (int i = 2; i < n; i++)
+       {
+     if (n % i == 0)
+        return false;
+       }
+
+     
+     return true;
+   }
+ }
+
+output
+   & 'C:\Program Files\Eclipse Adoptium\jdk-21.0.4.7-hotspot\bin\java.exe' '-XX:+ShowCodeDetailsInExceptionMessages' '-cp' 'C:\Users\Muthu visalakshi\AppData\Roaming\Code\User\workspaceStorage\26f165c88282b982d0114dadeade7c27\redhat.java\jdt_ws\javapgm_2c983a3c\bin' 'main1' 
+c88282b982d0114dadeade7c27\redhat.java\jdt_ws\javapgm_2c983a3c\bin' 'main1'                               2
+3
+5
+7
+11
+13
+17
+19
