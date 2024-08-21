@@ -1,0 +1,82 @@
+import java.util.*;
+public class squential {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the Size");
+        int n=scanner.nextInt();
+        int[] numbers = new int[n];        
+        System.out.println("Enter 5 numbers:");
+        for (int i = 0; i < 5; i++) {
+            numbers[i] = scanner.nextInt();
+        }
+         
+ Arrays.sort(numbers);
+
+        System.out.println("Sorted array: " + Arrays.toString(numbers));
+        int middleIndex = numbers.length / 2;
+        int middleElement = numbers[middleIndex];
+
+ System.out.println("The middle element is: " + middleElement);
+ System.out.println("the element going to search");
+ int key=scanner.nextInt();
+ int first=0;
+ int last=n-1;
+ int flag=0;;
+ while(first<=last){
+    if(numbers[middleIndex]<key){
+        first=middleIndex+1;
+        middleIndex=first+(last-first)/2;
+
+    }
+    if(numbers[middleIndex]>key){
+        last=middleIndex-1;
+        middleIndex=first+(last-first)/2;
+    }
+    if(numbers[middleIndex]==key){
+        System.out.println("The element"+key+"key found at"+(middleIndex)+"position");
+        flag=1;
+        break;
+    }
+
+ }
+ if(flag==0 ){
+    System.out.println("Not found");
+
+ }
+
+        System.out.println("Enter a number to search:");
+        int target = scanner.nextInt();
+
+        
+        int index = sequentialSearch(numbers, target);
+        if (index!=-1){
+        System.out.println("Number found at index"+index);
+}
+        else{
+         System.out.println("Not found");
+}
+
+
+        scanner.close();
+    }
+
+    public static int sequentialSearch(int[] array, int target) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == target) {
+                return i;
+            }
+        }
+        return -1;
+    }
+}
+output
+  Enter 5 numbers:
+8
+7
+9
+4
+3
+Enter a number to search:
+3
+Number found at index4
