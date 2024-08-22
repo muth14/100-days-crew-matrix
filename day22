@@ -1,0 +1,37 @@
+abstract class Animal {
+    abstract void makeSound();
+    
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+class Dog extends Animal {
+    void makeSound() {
+        System.out.println("The dog barks.");
+    }
+}
+
+class Cat extends Animal {
+    void makeSound() {
+        System.out.println("The cat meows.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        Animal myCat = new Cat();
+        
+        myDog.makeSound();
+        myCat.makeSound();
+        
+        myDog.eat();
+        myCat.eat();
+    }
+}
+output
+  The dog barks.
+The cat meows.
+This animal eats food.
+This animal eats food.
